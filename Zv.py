@@ -626,7 +626,7 @@ sxtz0     ';              ,;'
                 self.Termux()
             else:
                 self.Termux()
-    def Confirm():
+    def Confirm(self):
         return True
 
     def Termux(self):
